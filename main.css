@@ -65,6 +65,8 @@ nav {
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
+
+
 nav h1 {
   color: var(--primary-color);
 }
@@ -95,11 +97,3 @@ nav ul li {
   cursor: pointer;
   display: none;
 }
-
-
-
-
-
-
-
-
