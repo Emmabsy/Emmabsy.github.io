@@ -36,10 +36,11 @@ h2{
 	color:rgb(7, 13, 100);
 	font-size: 3rem;
 	font-family:monospace;
-	letter-spacing: 0.1rem;
+	
 }
 section {
 	height: 90vmin;
+	
 
   }
   section:nth-child(1) {
@@ -104,6 +105,7 @@ section {
 	text-transform:none;
 	color: black;
 	font-family: 'Brush Script MT', cursive;
+	justify-content: baseline;
 
 }
 .brand h1 span {
@@ -154,7 +156,7 @@ section {
 	left: 0%;
 }
 #header .nav-list ul a {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	text-decoration: none;
@@ -258,12 +260,13 @@ section {
 	/*background-color: rgb(111, 160, 212);*/
 	opacity: 0.7;
 	z-index: -1;
+	
 }
 #hero .hero {
 	max-width: 1200px;
-	
 	padding: 0 50px;
 	justify-content: flex-start;
+	justify-content:space-around;
 }
 
 
@@ -274,7 +277,14 @@ section {
 
 	overflow-wrap: break-word;
 	
-  }
+}
+#hero p{
+	line-height: 1.4rem;
+	letter-spacing: normal;
+	font-size: large;
+}
+	
+  
   
   #hero h1 :first-of-type {    /* For increasing performance 
 						 ID/Class should've been used. 
