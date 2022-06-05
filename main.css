@@ -42,8 +42,8 @@ h2{
 	font-size: 4rem;
 	font-weight: 300;
 	color: black;
-	margin-bottom: 10px;
-	text-transform: uppercase;
+	margin-bottom: 2px;
+	text-transform: none;
 	letter-spacing: 0.2rem;
 	text-align: center;
 }
