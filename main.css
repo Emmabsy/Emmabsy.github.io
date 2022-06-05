@@ -38,12 +38,40 @@ h2{
 	font-family:monospace;
 	letter-spacing: 0.1rem;
 }
+section {
+	height: 90vmin;
+
+  }
+  section:nth-child(1) {
+	background-color: rgb(199, 194, 199);
+  }
+  section:nth-child(2) {
+	background:white;
+  }
+  section:nth-child(3) {
+	background-color:whitesmoke;
+
+  }
+  section:nth-child(4) {
+	background-color:white;
+  }
+  section:nth-child(5) {
+	
+	height: 100%;
+	background-color: azure;
+	
+  }
+  
+  section:nth-child(6) {
+	background: azure;
+	height: 30vh;
+  }
 .section-title {
 	font-size: 4rem;
 	font-weight: 300;
 	color: black;
-	margin-bottom: 2px;
-	text-transform: none;
+	/*margin-bottom: 10px;*/
+	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 	text-align: center;
 }
@@ -55,7 +83,8 @@ h2{
 	display:inline-flex;
 	padding: 5px 20px;
 	color: white;
-	background-color: rgb(18, 98, 228);
+
+	background-color:rgb(75, 96, 138);
 	/*border: 2px solid crimson;*/
 	font-size: 1rem;
 	text-transform: none;
@@ -67,7 +96,8 @@ h2{
 }
 .cta:hover {
 	color: white;
-	background-color:rgb(75, 96, 138);
+	background-color: rgb(235, 156, 156);
+	
 }
 .brand h1 {
 	font-size: 3rem;
@@ -225,13 +255,13 @@ h2{
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgb(111, 160, 212);
+	/*background-color: rgb(111, 160, 212);*/
 	opacity: 0.7;
 	z-index: -1;
 }
 #hero .hero {
 	max-width: 1200px;
-	margin: 0 auto;
+	
 	padding: 0 50px;
 	justify-content: flex-start;
 }
@@ -365,7 +395,7 @@ h2{
 	width: 100%;
 	opacity: 0.9;
 	z-index: -1;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	/*background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);*/
 }
 #services .service-bottom .icon {
 	height: 80px;
@@ -374,67 +404,98 @@ h2{
 }
 #services .service-item h2 {
 	font-size: 2rem;
-	color: white;
+	color: rgb(6, 6, 6);
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
 #services .service-item p {
-	color: white;
+	color: rgb(8, 8, 8);
 	text-align: left;
 }
 /* End Services Section */
 
-
-
-
-/* contact Section */
-#contact .contact {
+/* Projects section */
+#projects .projects {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
-	width: 90%;
+	padding: 100px 0;
+	background-color: azure;
 }
-#contact .contact-items {
-	/* max-width: 400px; */
-	width: 100%;
+#projects .projects-header h1 {
+	margin-bottom: 50px;
 }
-#contact .contact-item {
-	width: 80%;
-	padding: 20px;
-	text-align: center;
-	border-radius: 10px;
-	padding: 30px;
-	margin: 30px;
+#projects .all-projects {
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
-	transition: 0.3s ease box-shadow;
 }
-#contact .contact-item:hover {
-	box-shadow: 0px 0px 5px 0 #0000002c;
+#projects .project-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
 }
-#contact .icon {
-	width: 70px;
-	margin: 0 auto;
-	margin-bottom: 10px;
+#projects .project-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	/*background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);*/
+	
 }
-#contact .contact-info h1 {
-	font-size: 2.5rem;
+#projects .project-info h1 {
+	font-size: 4rem;
 	font-weight: 500;
-	margin-bottom: 5px;
 }
-#contact .contact-info h2 {
-	font-size: 1.3rem;
-	line-height: 2rem;
+#projects .project-info h2 {
+	font-size: 1.8rem;
 	font-weight: 500;
+	margin-top: 10px;
 }
-/*End contact Section */
+#projects .project-info p {
+	color: rgb(7, 7, 7);
+}
+#projects .project-img {
+	flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#projects .project-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+
+	/*background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);*/
+	opacity: 0.7;
+}
+#projects .project-img img {
+	transition: 0.3s ease transform;
+}
+#projects .project-item:hover .project-img img {
+	transform: scale(1.1);
+}
+/* End Projects section */
+
+
+
 
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	/*background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);*/
+	background-color:white;
 }
 #footer .footer {
 	min-height: 200px;
@@ -443,7 +504,7 @@ h2{
 	padding-bottom: 10px;
 }
 #footer h2 {
-	color: white;
+	color: rgb(2, 2, 2);
 	font-weight: 500;
 	font-size: 1.8rem;
 	letter-spacing: 0.1rem;
@@ -467,7 +528,7 @@ h2{
 	filter: grayscale(0);
 }
 #footer p {
-	color: white;
+	color: rgb(4, 1, 8);
 	font-size: 1.3rem;
 }
 /* End Footer */
@@ -506,10 +567,6 @@ h2{
 	80% {opacity:1;}
 	100% {opacity:0;width:355px;}
 }
-
-
-
-
 
 
 
@@ -607,39 +664,7 @@ h2{
 	}
 	/* End About */
 
-	/* contact  */
-	#contact .contact {
-		flex-direction: column;
-		padding: 100px 0;
-		align-items: center;
-		justify-content: center;
-		min-width: 20vh;
-	}
-	#contact .contact-items {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		margin: 0;
-	}
-	#contact .contact-item {
-		width: 30%;
-		margin: 0;
-		flex-direction: row;
-	}
-	#contact .contact-item .icon {
-		height: 100px;
-		width: 100px;
-	}
-	#contact .contact-item .icon img {
-		object-fit: contain;
-	}
-	#contact .contact-item .contact-info {
-		width: 100%;
-		text-align: left;
-		padding-left: 20px;
-	}
-	/* End contact  */
+	
 }
 /* End Media Query For Tablet */
 
