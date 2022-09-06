@@ -504,7 +504,7 @@ pre {
   padding-left: 15px; }
 
 .hero {
-  background-image: url(../images/fot.jpg);
+  background-image: url(../images/fot.png);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -647,7 +647,10 @@ pre {
   right: 0;
   margin: auto;
   top: 3.2rem;
-  background-color: red;
+  background-color: rgb(152, 13, 13);
+}
+.contact-form{
+  color: var(--red);
 }
 
 
