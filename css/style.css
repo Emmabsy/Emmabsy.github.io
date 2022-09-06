@@ -524,9 +524,10 @@ pre {
   margin: 0 auto;
   width: auto;
   height: auto;
-    text-align: inherit;
+  text-align: inherit;
 
-  padding: 10px; 
+  padding: 7px; 
+  
 }
 
 .icon-bt {
@@ -567,8 +568,8 @@ pre {
 
 .fg {
   margin-left: auto;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border: 0;
     color: var(--white);
     cursor: pointer;
@@ -586,9 +587,11 @@ pre {
 .fa-twitter,
 .fa-facebook {
   padding-right: 20px;
-  color: white;
+  color: var(--white);
 
 }
+
+
 .footer {
   
   color: #fff;
