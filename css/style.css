@@ -503,7 +503,7 @@ pre {
   padding-right: 15px;
   padding-left: 15px; }
 
-.hero {
+/*.hero {
   background-image: url(../images/fot.png);
   background-size: cover;
   background-position: top center;
@@ -511,7 +511,7 @@ pre {
   z-index: 1;
   background-color: var(--gray-dark);
   height: 650px;
-}
+}*/
 
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
