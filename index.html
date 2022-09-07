@@ -23,8 +23,9 @@
 
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/styl.css">
+	<link rel="stylesheet" href="css/style.css">
+	
 	<link rel="stylesheet" href="css/projects.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
@@ -32,56 +33,43 @@
 </head>
 
 
-
-
-
-
-<!--<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-
-	<nav class="nav bd-grid navbar navbar-expand-lg navbar-light 
-	ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar"> -->
-
-
-	
-
-
-
-
-<body data-target=".site-navbar-target" data-offset="300">
+<body>
 	<!--===== HEADER =====-->
 	<header class="l-header">
-			<nav class="nav bd-grid " >
-				
-
+		<nav class="nav bd-grid">
+			<div>
 				<h2> <a style="color:rgb(152, 13, 13) ;" href="#home-section">Emma</a> </h2>
+				
+			</div>
 			
+
 			<div class="nav__menu" id="nav-menu">
 				<ul class="nav__list">
-					<li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-					<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-					<li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-					<li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-					<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-					<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-					
-
-					
+					<li class="nav__item"><a href="#home-section" class="nav__link active">Home</a></li>
+					<li class="nav__item"><a href="#about-section" class="nav__link">About</a></li>
+					<li class="nav__item"><a href="#skills-section" class="nav__link">Skills</a></li>
+					<li class="nav__item"><a href="#blog-section" class="nav__link">Projects</a></li>
+					<li class="nav__item"><a href="#resume-section" class="nav__link">Resume</a></li>
+					<li class="nav__item"><a href="#contact-section" class="nav__link">Contact</a></li>
 				</ul>
 			</div>
 
+
+			
+
 			<div class="nav__toggle" id="nav-toggle">
+				<!---->
+				<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+					data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="oi oi-menu"></span>
+				</button>
+				<!---->
+
 				<i class='bx bx-menu'></i>
 			</div>
-
-		
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> 
-			</button>
-
 		</nav>
 	</header>
+
 
 	
 
@@ -89,16 +77,32 @@
 		<!--===== HOME =====-->
 		<section class="home bd-grid" id="home">
 			<div class="home__data">
-				<h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Marlon</span><br> Web Designer</h1>
 
-				<a href="#" class="button">Contact</a>
+							<h2> Hello<span>&#128075;&#127997;</span> </h2>
+							<h1 class="home__title">I'm <span style="color: rgb(152, 13, 13);">Emma </span></h1>
+							<h3 class="mb-4">A Freelance Web Developer and Machine Learning Enthusiast</h>
+				<h1 class="home__title">I'am <span class="home__title-color">Marlon</span><br> Web Designer</h1>
+	
+			</div>
+	
+		
+
+
+						<div class="home__social">
+							<a href="" class="home__social-icon"><i class='fa fa-linkedin'></i></a>
+							<a href="" class="home__social-icon"><i class='fa fa-behance'></i></a>
+							<a href="" class="home__social-icon"><i class='fa fa-github'></i></a>
+						</div>
+
+
+				</div>
 			</div>
 
-			<div class="home__social">
-				<a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-				<a href="" class="home__social-icon"><i class='bx bxl-behance'></i></a>
-				<a href="" class="home__social-icon"><i class='bx bxl-github'></i></a>
-			</div>
+
+
+			
+
+
 
 			<div class="home__img">
 				<svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
@@ -113,19 +117,9 @@
 						<image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png" />
 					</g>
 				</svg>
+
 			</div>
 		</section>
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!--End Hero Section  -->
@@ -186,21 +180,23 @@
 <!--END OF ABOUT SECTION-->
 
 <!--SKILLS SECTION-->
-		<section class="ftco-section" id="skills-section">
-			<div class="container"> 
-				<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Skills</h1>
-			
-            <h3 style="margin-bottom: 20px" class="section-title">My Skills</h3>
-			<br>
-			<br>
-            
+
+
+<section class="ftco-section" id="skills-section">
+	<div class="container">
+		<div class="row justify-content-center pb-5">
+			<div class="col-md-12 heading-section text-center ftco-animate">
+				<h1 class="big big-2">Skills</h1>
+
+				<h3 style="margin-bottom: 20px" class="section-title">My Skills</h3>
+				<br>
+				<br>
+
 
 				<div class="imgs">
 					<div class="item">
-						<img src="./images/python.png"  width="100" height="100" />
-						
+						<img src="./images/python.png" width="100" height="100" />
+
 						<p>Python</p>
 					</div>
 					<div class="item">
@@ -209,7 +205,7 @@
 					</div>
 					<div class="item">
 						<img src="./images/git.png" width="100" height="100" />
-					
+
 						<p>Git and Github</p>
 					</div>
 					<div class="item">
@@ -218,7 +214,7 @@
 					</div>
 					<div class="item">
 						<img src="./images/html.png" width="100" height="100" />
-					
+
 						<p>Html</p>
 					</div>
 					<div class="item">
@@ -227,7 +223,7 @@
 					</div>
 					<div class="item">
 						<img src="./images/firebase.png" width="100" height="100" />
-					
+
 						<p>Firebase</p>
 					</div>
 					<div class="item">
@@ -236,7 +232,7 @@
 					</div>
 					<div class="item">
 						<img src="./images/mysql.png" width="100" height="100" />
-					
+
 						<p>MySQL</p>
 					</div>
 					<div class="item">
@@ -245,17 +241,14 @@
 						<br>
 						<br>
 					</div>
-					
 
-		
-			
-					</div>
+				</div>
 
-					<div class="container">
-				
+				<div class="container">
+
 					<div class="item">
 						<img src="./images/react.png" width="100" height="100" />
-					
+
 						<p>React</p>
 					</div>
 					<div class="item">
@@ -268,22 +261,20 @@
 					</div>
 					<div class="item">
 						<img src="./images/bootstrap.png" width="100" height="100" />
-						<p>	Bootsrap </p>
+						<p> Bootsrap </p>
 					</div>
-				
 
-					
-					
-					
-							</div>
-						</div>
-					</div>
+
 				</div>
 			</div>
-		</section>
- 
+		</div>
+</section>
+
 
 <!-- END OF SKILLS SECTION-->
+
+
+
 
 
 <!--PROJECTS SECTION-->
@@ -338,12 +329,11 @@
 		
 					<h3 class="heading"><a href="https://github.com/Emmabsy/SpringBoot-books-Application">
 							Android weather Application</a></h3>
-					<p>Created using android student.Created using android student.Created using android student.Created using android student..</p>
+					<p>Created using android student.Created using android student.Created using android
+						 student.Created using android student..</p>
 				</div>
 			</div>
 		</div>
-
-	
 			
 
         </div>
@@ -351,7 +341,6 @@
 	
     </section>
 <!--PROJECTS SECTIONS ENDS HERE-->
-
 
 
 <!-- RESUME SECTION-->
