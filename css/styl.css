@@ -1,5 +1,6 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -8,24 +9,25 @@
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
 
-  
-  
+
+
   /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
-    --big-font-size: 2rem;
-  
-    --normal-font-size: .938rem;
-    --smaller-font-size: .75rem;
-    /*===== Margenes =====*/
-    --mb-2: 1rem;
-      --mb-4: 2rem;
-      --mb-5: 2.5rem;
-      --mb-6: 3rem;
-      --mb-8:3rem;
-      /*===== z index =====*/
-      --z-back: -10;
-      --z-fixed: 100;
+  --big-font-size: 2rem;
+
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+  /*===== Margenes =====*/
+  --mb-2: 1rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+  --mb-8: 3rem;
+  /*===== z index =====*/
+  --z-back: -10;
+  --z-fixed: 100;
 }
+
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
@@ -49,14 +51,14 @@ html {
 body {
   margin: var(--header-height) 0 0 0;
   margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    
-  
-    text-align: left;
-    
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+
+
+  text-align: left;
+
 }
 
 h1,
@@ -80,11 +82,176 @@ a {
 /*===== CLASS CSS ===== */
 
 
+/* Basic styling */
+svg {
+  width: 70%;
+}
+
+.filled-heading {
+  text-transform:capitalize;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3em;
+  line-height: 0.1;
+}
+
+/* Animate the background shapes */
+#background path {
+  animation: pulse 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
+
+  /* Necessary to keep the SVG objects in place while scaling */
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+/* Reveal the desired lines of text in the desired order */
+#textClip text:nth-of-type(n + 1):nth-of-type(-n + 3) {
+  animation: showFirst 12s infinite;
+}
+#textClip text:nth-of-type(n + 4):nth-of-type(-n + 6) {
+  animation: showSecond 12s infinite;
+}
+
+#textClip text:nth-of-type(n + 7):nth-of-type(-n + 9) {
+  animation: showThird 12s infinite;
+}
+@keyframes pulse {
+
+  /* Rotating it along with the scale makes it a little bit more fancy */
+  0%,
+  100% {
+    transform: scale(0) rotate(33deg);
+  }
+
+  35%,
+  65% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes showFirst {
+
+  0%,
+  33% {
+    opacity: 1;
+  }
+
+  33.0001%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showSecond {
+
+  33.0001%,
+  66% {
+    opacity: 1;
+  }
+
+  0%,
+  33%,
+  66.0001%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showThird {
+
+  66.0001%,
+  99.999% {
+    opacity: 1;
+  }
+
+  0%,
+  66%,
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .section {
   padding-top: 3rem;
-    padding-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 /*===== LAYOUT =====*/
@@ -123,7 +290,7 @@ a {
     height: 100%;
     padding: 1rem;
     background-color: rgb(32, 40, 45);
-    
+
     transition: .5s;
   }
 }
@@ -150,7 +317,7 @@ a {
   left: 0;
   top: 1.8rem;
   background-color: rgb(135, 13, 13);
-  
+
 }
 
 .nav__logo {
@@ -158,8 +325,8 @@ a {
 }
 
 .nav__toggle {
-  
-  color:white;
+
+  color: white;
   font-size: 1.8rem;
   cursor: pointer;
 }
@@ -172,7 +339,7 @@ a {
   height: 0.18rem;
   left: 0;
   top: 1.5rem;
-  
+
   background-color: rgb(135, 13, 13);
 }
 
@@ -184,7 +351,7 @@ a {
 /*===== HOME =====*/
 .home {
   position: relative;
- 
+
   height: 700px;
 }
 
@@ -194,19 +361,19 @@ a {
 
 .home__title {
   font-size: var(--big-font-size);
-  
+
 }
 
 .home__title-color {
   color: rgb(135, 13, 13);
- 
+
 }
 
 .home__social {
   padding-top: 3rem;
-    padding-bottom: 2.5rem;
-    flex-direction: row;
-    align-self: flex-end;
+  padding-bottom: 2.5rem;
+  flex-direction: row;
+  align-self: flex-end;
 }
 
 .home__social-icon {
@@ -362,7 +529,7 @@ a {
     padding-bottom: 2rem;
   }
 
- 
+
 
   .section-title::after {
     width: 80px;
@@ -385,12 +552,12 @@ a {
 
   .nav__toggle {
     display: none;
-    
+
   }
 
   .nav__link {
     color: rgb(244, 239, 239);
-    
+
   }
 
   .home {
@@ -410,7 +577,7 @@ a {
     width: 300px;
   }
 
-  
+
   .work__container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
