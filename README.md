@@ -1,5 +1,12 @@
 
 # My Portfolio
+Preview - [Click Here](https://Emmabsy.github.io/)
+<br/>
+<div align="center">
+  <img alt="Homepage" src="public/portfolio.png" />
+</div>
+<br/>
+<br/>
 
 Welcome to my portfolio! This project showcases my skills, projects, and experiences as a software developer. Whether you're a potential employer, collaborator, or just someone interested in my work, I hope you find what you're looking for here.
 
