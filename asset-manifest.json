@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.bed7ab8e.css",
-    "main.js": "/static/js/main.bcf90d10.js",
-    "index.html": "/index.html",
-    "main.bed7ab8e.css.map": "/static/css/main.bed7ab8e.css.map",
-    "main.bcf90d10.js.map": "/static/js/main.bcf90d10.js.map"
+    "main.css": "/Emmabsy.github.io/static/css/main.bed7ab8e.css",
+    "main.js": "/Emmabsy.github.io/static/js/main.215efa51.js",
+    "index.html": "/Emmabsy.github.io/index.html",
+    "main.bed7ab8e.css.map": "/Emmabsy.github.io/static/css/main.bed7ab8e.css.map",
+    "main.215efa51.js.map": "/Emmabsy.github.io/static/js/main.215efa51.js.map"
   },
   "entrypoints": [
     "static/css/main.bed7ab8e.css",
-    "static/js/main.bcf90d10.js"
+    "static/js/main.215efa51.js"
   ]
 }
