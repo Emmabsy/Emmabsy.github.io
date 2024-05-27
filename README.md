@@ -1,10 +1,12 @@
 
 # My Portfolio
-Preview - [Click Here](https://Emmabsy.github.io/)
+Check it out- (https://Emmabsy.github.io/)
 <br/>
 <div align="center">
   <img alt="Homepage" src="public/portfolio.png" />
 </div>
+<br/>
+<br/>
 <br/>
 <br/>
 
