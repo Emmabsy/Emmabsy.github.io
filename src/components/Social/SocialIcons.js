@@ -83,12 +83,7 @@ const SocialIcons = () => {
         rel="noopener noreferrer">
         <i className="fab fa-twitter"></i>
       </SocialIcon>
-      <SocialIcon
-        href="https://www.instagram.com/"
-        target="_blank"
-        rel="noopener noreferrer">
-        <i className="fab fa-instagram"></i>
-      </SocialIcon>
+    
     </SocialContainer>
   );
 };
