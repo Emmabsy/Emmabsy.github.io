@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Emmabsy.github.io/static/css/main.bed7ab8e.css",
+    "main.js": "/Emmabsy.github.io/static/js/main.165733ed.js",
+    "index.html": "/Emmabsy.github.io/index.html",
+    "main.bed7ab8e.css.map": "/Emmabsy.github.io/static/css/main.bed7ab8e.css.map",
+    "main.165733ed.js.map": "/Emmabsy.github.io/static/js/main.165733ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bed7ab8e.css",
+    "static/js/main.165733ed.js"
+  ]
+}
